@@ -9,7 +9,6 @@ import { useState } from "react";
 function App() {
   const [todoItems, setTodoItems] = useState([]);
   const handelNewItem = (itemName, itemDueDate) => {
-    console.log(`NEW ${itemName} date=${itemDueDate}`);
     const newToDoItems = [
       ...todoItems,
       { name: itemName, dueDate: itemDueDate },

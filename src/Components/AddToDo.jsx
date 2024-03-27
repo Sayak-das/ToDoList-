@@ -1,8 +1,9 @@
 import { useState } from "react";
+import { IoBagAddSharp } from "react-icons/io5";
 
 function AddToDo({ onNewItem }) {
-  const [todoName, setTodoName] = useState();
-  const [dueDate, setDueDate] = useState();
+  const [todoName, setTodoName] = useState("");
+  const [dueDate, setDueDate] = useState("");
 
   const handelNameChange = (event) => {
     setTodoName(event.target.value);
@@ -37,7 +38,7 @@ function AddToDo({ onNewItem }) {
             className="btn btn-success sd-button"
             onClick={handelAddButtonClicked}
           >
-            Add
+            <IoBagAddSharp />
           </button>
         </div>
       </div>
